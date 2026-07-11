@@ -1,0 +1,87 @@
+body {
+    background-image: url("Images/bg1.png");
+    background-size: cover;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.btn-box {
+  display: flex;
+  gap: 20px;
+  position: absolute;
+  left: 55px;
+  bottom: -40px;
+}
+
+.btn {
+  padding: 14px 32px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.explore {
+  background: #18c8ff;
+  color: #00111a;
+  border: 2px solid #18c8ff;
+  box-shadow: 0 0 15px #18c8ff;
+}
+
+.contact {
+  background: transparent;
+  color: #ff4df3;
+  border: 2px solid #ff4df3;
+  box-shadow: 0 0 12px #ff4df3;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 25px currentColor;
+}
+.navbar {
+  display: flex;
+  gap: 60px;
+  position: absolute;
+  top: 25px;
+  right: 45px;
+}
+
+.nav-link {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  padding-bottom: 14px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #18c8ff;
+}
+
+.nav-link.active {
+  color: #18c8ff;
+  border-bottom: 3px solid #18c8ff;
+}
+@media (max-width: 768px) {
+
+  .navbar {
+    position: static;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  .btn-box {
+    position: static;
+    justify-content: center;
+    margin-top: 100px;
+    flex-wrap: wrap;
+  }
+
+}

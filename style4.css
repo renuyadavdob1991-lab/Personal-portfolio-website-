@@ -1,0 +1,108 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("Images/bg3.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+.project-nav {
+  display: flex;
+  gap: 55px;
+  position: absolute;
+  top: 22px;
+  right: 45px;
+}
+html {
+    overflow-y: scroll;
+}
+
+.project-nav button {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  padding-bottom: 13px;
+  transition: 0.3s ease;
+}
+
+.project-nav button:hover,
+.project-nav .active {
+  color: #00f5ff;
+  border-bottom: 3px solid #00f5ff;
+}
+
+.project-buttons {
+  position: absolute;
+  left: 35px;
+  right: 35px;
+  bottom: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+
+.view {
+  width: 108px;
+  height: 34px;
+  margin-left: 0;
+  background: transparent;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 12px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.blue {
+  color: #28c7ff;
+  border: 2px solid #28c7ff;
+}
+
+.purple {
+  color: #b64cff;
+  border: 2px solid #b64cff;
+}
+
+.green {
+  color: #57e979;
+  border: 2px solid #57e979;
+}
+
+.yellow {
+  color: #ffd21f;
+  border: 2px solid #ffd21f;
+}
+
+.view:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 15px currentColor;
+}
+@media (max-width: 768px) {
+
+  .project-nav {
+    position: static;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 20px;
+  }
+
+  .project-buttons {
+    position: static;
+    grid-template-columns: 1fr;
+    width: 90%;
+    margin: 40px auto;
+  }
+
+}
